@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 using PoeAA.Domain_Logic_Patterns;
 using Xunit;
 
