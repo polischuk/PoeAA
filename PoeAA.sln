@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2037
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PoeAA", "PoeAA\PoeAA.csproj", "{8D70FB91-FFE0-4332-94C8-FDAD4F2F4657}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PoeAA.Tests", "PoeAA.Tests\PoeAA.Tests.csproj", "{96839EC6-2C1E-422E-9480-EE797A5D7FD0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8D70FB91-FFE0-4332-94C8-FDAD4F2F4657}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D70FB91-FFE0-4332-94C8-FDAD4F2F4657}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D70FB91-FFE0-4332-94C8-FDAD4F2F4657}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D70FB91-FFE0-4332-94C8-FDAD4F2F4657}.Release|Any CPU.Build.0 = Release|Any CPU
+		{96839EC6-2C1E-422E-9480-EE797A5D7FD0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{96839EC6-2C1E-422E-9480-EE797A5D7FD0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{96839EC6-2C1E-422E-9480-EE797A5D7FD0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{96839EC6-2C1E-422E-9480-EE797A5D7FD0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A257E31B-A273-47AF-A01F-9D0EEA396CCC}
+	EndGlobalSection
+EndGlobal
