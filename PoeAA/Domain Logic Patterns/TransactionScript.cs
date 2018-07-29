@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Data;
 using System.Data.SqlClient;
-using System.Transactions;
 using Dapper;
 
 namespace PoeAA.Domain_Logic_Patterns
@@ -40,7 +39,7 @@ namespace PoeAA.Domain_Logic_Patterns
             using (IDbConnection db = new SqlConnection(_connectionString))
             {
                 db.Open();
-                using (IDbTransaction transaction = db.BeginTransaction(System.Data.IsolationLevel.ReadUncommitted))
+                using (IDbTransaction transaction = db.BeginTransaction(IsolationLevel.ReadUncommitted))
                 {
                     try
                     {

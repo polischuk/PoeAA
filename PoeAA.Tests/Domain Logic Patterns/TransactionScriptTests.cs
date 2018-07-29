@@ -10,6 +10,7 @@ namespace PoeAA.Tests.Domain_Logic_Patterns
     {
         private string connString =
             "Data Source=localhost;Initial Catalog=test;Integrated Security=True;MultipleActiveResultSets=True";
+
         [Fact]
         public void ExecuteInsertCommand_WithValidData_ShouldInsertEntityToDb()
         {
@@ -21,6 +22,7 @@ namespace PoeAA.Tests.Domain_Logic_Patterns
                 Id = Guid.NewGuid()
             });
         }
+
         [Fact]
         public void ExecuteInsertCommand_WithBadStatus_ShouldThrowException()
         {
