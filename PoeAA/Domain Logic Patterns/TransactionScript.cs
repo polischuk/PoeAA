@@ -60,7 +60,9 @@ namespace PoeAA.Domain_Logic_Patterns
         public void DoStuff(TransactionScriptModel model)
         {
             if (model == null || model.Status == "Fake")
+            {
                 throw new Exception("Bad data");
+            }
         }
     }
 
