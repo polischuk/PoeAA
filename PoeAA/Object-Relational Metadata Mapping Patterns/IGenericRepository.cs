@@ -12,8 +12,6 @@ namespace PoeAA
     /// </summary>
     public interface IGenericRepository<T> where T : class
     {
-        DbContext Context { get; }
-
         /// <summary>
         /// Persists all updates to the data source
         /// </summary>

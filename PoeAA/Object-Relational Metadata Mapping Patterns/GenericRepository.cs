@@ -13,15 +13,13 @@ namespace PoeAA
     public class GenericRepository<T> : IGenericRepository<T> where T : class
     {
         private readonly DbSet<T> _dbSet;
-        public DbContext Context { get; }
-
+        private readonly DbContext _context;
         /// <summary>
         /// Ctor with DI
         /// </summary>
         public GenericRepository(DbContext context)
         {
-            Context = context;
-            Context.Database.CommandTimeout = 200;
+            _context = context;
             _dbSet = context.Set<T>();
         }
 
@@ -130,7 +128,7 @@ namespace PoeAA
         /// <param name="entity">Entity object</param>
         public virtual void Update(T entity)
         {
-            Context.Entry(entity).State = EntityState.Modified;
+            _context.Entry(entity).State = EntityState.Modified;
         }
 
         /// <summary>
@@ -138,7 +136,7 @@ namespace PoeAA
         /// </summary>
         public virtual void SaveChanges()
         {
-            Context.SaveChanges();
+            _context.SaveChanges();
         }
 
         /// <summary>
@@ -146,7 +144,7 @@ namespace PoeAA
         /// </summary>
         public virtual Task SaveChangesAsync()
         {
-            return Context.SaveChangesAsync();
+            return _context.SaveChangesAsync();
         }
 
         /// <summary>
